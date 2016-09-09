@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BIM calculator APP</title>
+  <meta charset="utf-8">
+  <meta name="description" content="BIM calculator APP">
+  <meta name="author" content="HvdR">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>BIM calculator APP</h1>
+    <h2>Calculate your Body Mass Index</h2>
+    <p>HvdR<br/>Student</p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Contents</h2>
+  </hgroup>
+  <article data-timings="">
+    <ol>
+<li>Explanation of BMI </li>
+<li>The BmiMetric BMI calculator App</li>
+<li>BMI advices</li>
+</ol>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-2" style="background:;">
+  <hgroup>
+    <h2>Explanation of BMI</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Obesity can be a major risk for diabetes, heart disease and death. </p>
+
+<p>The Body mass index (BMI) is the standard metric for determining who is normal-weight, overweight and obese.</p>
+
+<p>BMI is a measure of body fat based on length and weight that applies to adult men and women. </p>
+
+<p>The formula is: \[BMI = \frac{weight[kg]}{(length[m])^2}\]</p>
+
+<p>If your BMI indicates you are overweight, it is time for you to loose weight.</p>
+
+<p>For more information: <a href='http://www.nhlbi.nih.gov/health/educational/lose_wt/BMI/bmi-m.htm'>US National Heart, Lung and Blood Institute</a></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>The BmiMetric BMI calculator App</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Do you want to determine your BMI and get an usefull advice ?</p>
+
+<p>&quot;BmiMetric&quot; is an easy-to-use BMI calculator APP developed with the Shiny platform</p>
+
+<p>The BMI calculator can be found on <a href='https://hridder.shinyapps.io/bmimetric/'><a href="https://hridder.shinyapps.io/bmimetric">https://hridder.shinyapps.io/bmimetric</a></a></p>
+
+<p><img src="assets/img/bmimetric.jpg" /></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>BMI Weight</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>A BMI Value of more than 25 determines if someone is overweighted. Useful information is a plot of the maximum weight by length.</p>
+
+<p>A quick line plot for the maximum weight by length can be made in R with:</p>
+
+<pre><code>length &lt;- (140:210)   # Length in [cm]
+weight &lt;- 25 * ((length/100)^2)
+plot(length,weight)
+</code></pre>
+
+<p><img src="assets/fig/unnamed-chunk-1-1.png" alt="plot of chunk unnamed-chunk-1"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Contents'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Explanation of BMI'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='The BmiMetric BMI calculator App'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='BMI Weight'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- MathJax: Fall back to local if CDN offline but local image fonts are not supported (saves >100MB) -->
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        processEscapes: true
+      }
+    });
+  </script>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <!-- <script src="https://c328740.ssl.cf1.rackcdn.com/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script> -->
+  <script>window.MathJax || document.write('<script type="text/x-mathjax-config">MathJax.Hub.Config({"HTML-CSS":{imageFont:null}});<\/script><script src="libraries/widgets/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"><\/script>')
+</script>
+<!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
